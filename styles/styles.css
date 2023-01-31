@@ -1,0 +1,68 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  width: 45vw;
+  height: 100vh;
+  background-image: url(../assets/images/leaf.jpg);
+  background-size: cover;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(230, 228, 228);
+}
+
+.paragraphs-container > p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-left: 35px;
+}
+
+.title-and-fields {
+  background-color: rgb(247, 247, 247);
+  padding: 5px 150px 35px 35px;
+}
+
+.fields {
+  display: grid;
+  grid-template: repeat(3, auto) / repeat(2, auto); 
+  gap: 20px 30px;
+}
+
+.button {
+  margin-top: 30px;
+  margin-left: 35px;
+  margin-bottom: 10px;
+  padding: 10px 35px 10px 35px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: rgb(247, 247, 247);
+  background-color: rgb(58, 114, 58);
+}
+
+.question-account {
+  padding-left: 35px;
+}
+
+.question-account > a {
+  text-decoration: none;
+  color: rgb(58, 114, 58);
+  font-weight: bold;
+}
+
+
+
